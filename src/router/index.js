@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Create from "../views/Create.vue";
 import List from "../views/List.vue";
 import Edit from "../views/Edit.vue";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -32,10 +33,11 @@ const routes = [
     component: List
   },
   {
-    path: "/edit/id",
+    path: "/edit/:id",
     name: "Edit",
     component: Edit
   }
+  
  
 ];
 
